@@ -24,6 +24,38 @@ int main()
 	lib.del_publication("C++");
 	lib.show();
 	std::cout << "----------------------------------\n";	
-	
+	std::cout<<"Handling Exceptions: " << std::endl;
+	try
+	{
+		lib.add_publication(new Book("", "Stephen Prata", 2020, "popular guide for beginner C++ programmers"));		
+	}
+	catch (PublicationException& exception)
+	{
+		std::cout << exception.showMessage() << std::endl;
+	}
+
+	try
+	{		
+		lib.add_publication(new Book("C++: The Complete Reference", "", 2021, "an extensive guide to the C++ language"));
+	}
+	catch (PublicationException& exception)
+	{
+		std::cout << exception.showMessage() << std::endl;
+	}
+
+	try
+	{
+		lib.add_publication(new Book("C++: The Complete Reference", "Stephen Prata", 0, "an extensive guide to the C++ language"));
+	}
+	catch (PublicationException& exception)
+	{
+		std::cout << exception.showMessage() << std::endl;
+	}
+
+	std::cout << "----------------------------------\n";
+	std::cout << std::endl;
+
+	lib.show();
+
 	return 0;
 }
