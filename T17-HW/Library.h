@@ -4,6 +4,7 @@
 #include"Publication.h"
 #include<vector>
 
+
 class Library
 {
 	std::string name_library;
@@ -18,7 +19,7 @@ public:
 
 	void show()const;
 	void add_publication(Publication* obj);
-	void del_publication(std::string name)const;
+	void del_publication(std::string name);
 	void find_publication(std::string name)const;
 };
 
