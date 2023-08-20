@@ -38,6 +38,10 @@ void Library::show() const
 
 void Library::add_publication(Publication* obj)
 {
+	if (obj->get_name().empty() || obj->get_author().empty())
+	{
+		throw BookException();
+	}
 	library.push_back(obj);
 }
 

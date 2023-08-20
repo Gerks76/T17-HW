@@ -8,10 +8,17 @@ Publication::Publication()
 }
 
 Publication::Publication(std::string name, std::string author, int year_publishing)
-{
+{    
     this->name = name;
     this->author = author;
-    this->year_publishing = year_publishing;
+    if (year_publishing>0)
+    {
+        this->year_publishing = year_publishing;
+    }
+    else
+    {
+        throw EditionYearException();
+    }    
 }
 
 void Publication::set_name(std::string name)

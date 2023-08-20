@@ -1,4 +1,5 @@
 #pragma once
+#include"PublicationException.h"
 #include<iostream>
 #include<string>
 

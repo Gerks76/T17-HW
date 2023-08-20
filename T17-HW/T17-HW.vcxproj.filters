@@ -27,6 +27,9 @@
     <ClInclude Include="Library.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="PublicationException.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Publication.cpp">
@@ -39,6 +42,9 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="Library.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="PublicationException.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

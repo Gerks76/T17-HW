@@ -2,6 +2,7 @@
 #include"Book.h"
 #include"Magazine.h"
 #include"Publication.h"
+#include"PublicationException.h"
 #include<vector>
 
 
