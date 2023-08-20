@@ -149,6 +149,7 @@
     <ClCompile Include="Book.cpp" />
     <ClCompile Include="Library.cpp" />
     <ClCompile Include="Magazine.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Publication.cpp" />
     <ClCompile Include="PublicationException.cpp" />
   </ItemGroup>

@@ -33,7 +33,9 @@ void Library::show() const
 	for (int i = 0; i < library.size(); i++)
 	{
 		library[i]->show();
+		std::cout << std::endl;
 	}
+	
 }
 
 void Library::add_publication(Publication* obj)
